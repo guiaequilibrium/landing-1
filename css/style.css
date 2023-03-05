@@ -1,0 +1,100 @@
+*{border: 0;margin: 0;padding: 0;font-family: 'Roboto', sans-serif;}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: 'Quicksand', sans-serif;
+ 
+    font-weight: bold;
+}
+
+.headline {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.container{border: 0px solid red}
+.col{border: 0px solid red}
+.book-badge {
+    position: absolute;
+    right: 22%;
+    top: -2rem;
+    width: 80px;
+    height: 80px;
+    background: #5cb377;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 23px;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: bold;
+    z-index: 5 ;
+    transition: transform 1s ease;
+}
+
+.btn{
+
+    border-radius: 0;
+
+}
+
+.btn span{
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+
+}
+
+.btn hr{
+
+    padding-top: 1px;
+    margin-bottom: 0px;
+
+}
+
+.fs-xl{
+
+font-size: 1.7rem;
+
+}
+
+.fs-xs{
+
+    font-size: 1rem;
+    
+    }
+
+.icon-size{font-size: 3.5rem;}
+
+.waves {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #d00c0c;
+    padding: 15px 20px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  
+  .waves::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate3d(-50%, -50%, 0);
+    transition: width 0.1s ease-out, height 0.1s ease-out;
+  }
+
+  .waves:focus::after {
+    width: 400px;
+    height: 400px;
+  }
