@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Equilibrium</title>
+    <title>Equilíbrium</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/backpack.css@3.0.0/dist/index.css" rel="stylesheet">
     <link href="./css/book.css" rel="stylesheet">
@@ -15,24 +15,40 @@
 
 </head>
   <body class="bg-dark text-light">
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Equilibrium</a>
-        
-        
-  </div>
-</nav>
+        <a class="navbar-brand" href="#">Equilíbrium</a>
+    
+        <!-- Checkbox para ativar/desativar a leitura -->
+        <div class="form-check form-switch ms-auto text-dark">
+          <input class="form-check-input" type="checkbox" id="ativar-leitura">
+          <label class="form-check-label" for="ativar-leitura">Ativar Leitura</label>
+        </div>
+    
+        <!-- Lista de vozes -->
+        <div class="dropdown ms-auto">
+          <label class="form-check-label text-dark" for="lista-vozes">Selecionar Voz:</label>
+          <select class="btn btn-secondary dropdown-toggle" type="button" id="lista-vozes" data-bs-toggle="dropdown" aria-expanded="false">
+            
+          </select>
+          
+        </div>
+      </div>
+    </nav>
+    
 
-    <div class="container pt-3">
+    <div class="container pt-5 mt-5">
         <div class="row justify-content-center align-items-center g-2">
             <div class="col-md">
+              <div class="read">
                 <h1 class="headline">
                   Descubra agora os <span style="background-color: #ffff00;color:#000;padding:2px">segredos</span> que tem ajudado milhares de pessoas no mundo todo a viver com mais <span style="background-color: #5E376D;color:#fff;padding:2px">equilíbrio mental</span> e <span style="background-color: #5E376D;color:#fff;padding:2px">realização</span>.
                 </h1>
                 <!-- <figure class="text-center"> -->
                     <blockquote class="blockquote quotes pt-3">
-                      <p>Não deixe que a ansiedade, o estresse e a sobrecarga dominem a sua vida! Você não precisa enfrentar esses desafios sozinho - há inúmeras maneiras de obter o apoio que você precisa. Descubra como outras pessoas têm superado essas mesmas dificuldades e comece a trilhar o caminho para uma vida mais equilibrada e feliz hoje mesmo!</p>
+                      <p>Não deixe que a ansiedade, o estresse e a sobrecarga dominem a sua vida! Você não precisa enfrentar esses desafios sozinho - há inúmeras maneiras de obter o apoio que você precisa. Descubra como outras pessoas têm superado essas mesmas dificuldades e comece a trilhar o caminho para uma vida mais calma e feliz hoje mesmo!</p>
                     </blockquote>
+                </div>
                     <div style="
               width: 100%;
               text-align: center;
@@ -63,7 +79,9 @@
                 
             </section></div>
           </div>
+          <div class="read">
             <div class="row justify-content-center align-items-center g-2">
+             
               <h2 class="pb-2 border-bottom headline">Comece a mudança hoje mesmo!</h2>
               <div class="col">
                
@@ -71,7 +89,7 @@
                     <blockquote class="blockquote quotes pt-3">
                       <p>Você sabia que <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">milhões de pessoas em todo o mundo</span> sofrem com problemas relacionados à saúde mental? <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">Ansiedade, estresse e até mesmo a raiva</span> podem afetar negativamente a qualidade de vida, relacionamentos e até mesmo a saúde física. Mas a boa notícia é que não precisa ser assim!</p>
 <br>
-                       <p> Com este <span style="font-style: italic">livro altamente detalhado e intuitivo</span>, você vai aprender <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">técnicas testadas e comprovadas por profissionais de saúde mental no mundo todo</span>. Começe ainda hoje a buscar pelo <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">equilíbrio mental</span> necessário para uma vida plena, feliz e saudável.</p>
+                       <p> Com este <span style="font-style: italic">livro altamente detalhado e intuitivo</span>, você vai aprender <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">técnicas testadas e comprovadas por profissionais de saúde mental no mundo todo</span>. Começe ainda hoje a buscar pela <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">estabilidade mental</span> necessário para uma vida plena, feliz e saudável.</p>
                         <br>
                         <p>Com dicas práticas e acessíveis, você vai adotar <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">hábitos saudáveis</span> e compreender suas emoções para cuidar da sua saúde mental de forma efetiva. E a melhor parte? Você pode começar agora mesmo, com apenas um clique!</p>
                         <br>
@@ -79,14 +97,16 @@
                       </p>
                     </blockquote>
 
-
+                  </div>
                     <!-- <button type="button" class="btn btn-danger waves btn-lg fs-xl">Adquira Agora!</button> -->
                     
-          </div>
+         
         </div>
+      </div>
         <div class="row justify-content-center align-items-center g-2">
           <div class="col">
             <div class="container pt-4 py-5" id="icon-grid">
+              <div class="read">
               <h2 class="pb-2 border-bottom headline">Algumas abordagens do Ebook:</h2>
           
               <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-center">
@@ -95,7 +115,7 @@
                     <i class="fa-solid fa-heart-circle-check icon-size"></i>
                   </div>
                   <h3 class="fs-2">Gerencie a Ansiedade</h3>
-                  <p>Aprenda a controlar sua ansiedade e reduzir seus níveis de estresse com técnicas comprovadas que vão ajudá-lo a recuperar o equilíbrio emocional.</p>
+                  <p>Aprenda a controlar sua ansiedade e reduzir seus níveis de estresse com técnicas comprovadas que vão ajudá-lo a recuperar o seu emocional.</p>
                   
                 </div>
                 <div class="feature col">
@@ -115,7 +135,7 @@
                  
                 </div>
 
-                
+              </div>
               </div>
               <div style="
               width: 100%;
@@ -127,14 +147,16 @@
             </div>
             <div sty class="row justify-content-center align-items-center g-2 pb-5">
               <div class="col">
+                <div class="read">
                 <h2 class="pb-2 border-bottom headline">Quais os benefícios?</h2>
                 <!-- <figure class="text-center"> -->
                     <blockquote class="blockquote quotes pt-3">
-                      <p>Com "Equilibrium - Um GUIA para equilibrar a MENTE", você vai aprender técnicas eficazes para compreender e lidar com suas emoções de maneira positiva. Você encontrará dicas para gerenciar a ansiedade, controlar a raiva, lidar com o estresse e muito mais.</p>
+                      <p>Com "Equilíbrium - Um GUIA para equilibrar a MENTE", você vai aprender técnicas eficazes para compreender e lidar com suas emoções de maneira positiva. Você encontrará dicas para gerenciar a ansiedade, controlar a raiva, lidar com o estresse e muito mais.</p>
 <br>
-                       <p> Imagina finalmente ter o controle das suas emoções, sentindo-se equilibrado e calmo em todas as situações. Com este guia, você terá as ferramentas necessárias para lidar com as emoções difíceis de maneira saudável, para que possa focar no que realmente importa em sua vida.</p>
+                       <p> Imagina finalmente ter o controle das suas emoções, sentindo-se calmo em todas as situações. Com este guia, você terá as ferramentas necessárias para lidar com as emoções difíceis de maneira saudável, para que possa focar no que realmente importa em sua vida.</p>
                         <br>
-                        <p><span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">E tem mais:</span> adquirindo o seu exemplar agora, <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">você receberá um bônus EXCLUSIVO</span> que potencializará ainda mais seu equilíbrio emocional.</span></p>
+                        <p><span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">E tem mais:</span> adquirindo o seu exemplar agora, <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">você receberá um bônus EXCLUSIVO</span> que potencializará ainda mais seus resultados.</span></p>
+                      </div>
                         <br>
                         <div class="row" style="display: flex; align-items: center;"><div class="col"><section class="app" id="app" data-current-media="book" style="padding-top: 40px;padding-bottom: 35px;">
                 
@@ -185,8 +207,10 @@
           </section></div>
           
           </div>
-                        <p><span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">Não perca tempo:</span> comece hoje mesmo a experimentar uma vida mais equilibrada e saudável com "Equilibrium - Um GUIA para equilibrar a MENTE".
+          <div class="read">
+                        <p><span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">Não perca tempo:</span> comece hoje mesmo a experimentar uma vida mais equilibrada e saudável com "Equilíbrium".
                       </p>
+                    </div>
                     </blockquote>
 
 
@@ -198,12 +222,13 @@
           </div>
         </div>
         <div class="row justify-content-center align-items-center g-2 pb-0">
+          <div class="read">
           <h2 class="pb-2 border-bottom headline">Ruminações</h2>
           <div class="col">
            
             <!-- <figure class="text-center"> -->
                 <blockquote class="blockquote quotes pt-3">
-                  <p><span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">Já se pegou preso em um ciclo de pensamentos negativos?</span> Esse é um problema comum que afeta muitas pessoas e pode ser muito prejudicial para a saúde mental. É por isso que a terceira parte do livro "<span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">Equilibrium</span>" dedica-se a ajudar os leitores a lidar com seus pensamentos e promover uma mentalidade mais saudável, fornecendo exercícios inéditos para gestão de raiva, controle do estresse, controle da ansiedade e muito mais!</p>
+                  <p><span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">Já se pegou preso em um ciclo de pensamentos negativos?</span> Esse é um problema comum que afeta muitas pessoas e pode ser muito prejudicial para a saúde mental. É por isso que a terceira parte do livro "<span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">Equilíbrium</span>" dedica-se a ajudar os leitores a lidar com seus pensamentos e promover uma mentalidade mais saudável, fornecendo exercícios inéditos para gestão de raiva, controle do estresse, controle da ansiedade e muito mais!</p>
                 </blockquote>
 
 
@@ -218,7 +243,7 @@
                           <div class="feature-icon d-inline-flex align-items-center justify-content-center  mb-3">
                             <i class="fas fa-dumbbell icon-size"></i>
                           </div>
-                          <h3 class="fs-2">Exercícios para o Equilíbrio Mental</h3>
+                          <h3 class="fs-2">Exercícios para Fortalecer a Mente</h3>
                           <p>Descubra como a atividades físicas e mentais podem melhorar sua saúde e conheça os exercícios mais indicados para fortalecer a mente e o corpo.</p>
                           
                         </div>
@@ -235,7 +260,7 @@
                             <i class="fa-solid fa-heart-circle-check icon-size"></i>
                           </div>
                           <h3 class="fs-2">Criando Hábitos Saudáveis</h3>
-                          <p>Aprenda a criar hábitos saudáveis que ajudem a manter sua mente e corpo em equilíbrio e a desfrutar de uma vida mais saudável e feliz.</p>
+                          <p>Aprenda a criar hábitos saudáveis que ajudem a manter sua mente e corpo em estáveis e a desfrutar de uma vida mais saudável e feliz.</p>
                           
                         </div>
                         
@@ -246,28 +271,32 @@
                     
                     </div>
                     </div>
+                  </div>
       </div>
     </div>
         
     <div class="row justify-content-center align-items-center g-2 pb-0">
-      <h2 class="pb-2 border-bottom headline">Aprenda sobre as abordagens terapêuticas</h2>
+      <div class="read">
+      <h2 class="pb-2 border-bottom headline">Abordagens terapêuticas</h2>
+    </div>
       <div class="col">
-       
+       <div class="read">
         <!-- <figure class="text-center"> -->
             <blockquote class="blockquote quotes pt-3">
               <p><span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">Existem várias abordagens diferentes</span>, cada uma com suas próprias técnicas e estratégias exclusivas. Já pensou em experimentar uma <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">abordagem terapêutica</span> para ajudar a equilibrar sua mente?
                 <br><br>
-                Escolher uma abordagem terapêutica para seguir <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">não é uma tarefa fácil</span>, cada abordagem pode ajudar indivíduos em situações específicas, por isso temos uma seção dedicada com <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">diferentes abordagens</span> para que você possa aprender sobre e <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">decidir se deseja ou não seguir alguma</span>.
+                Escolher uma abordagem terapêutica para seguir <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">não é uma tarefa fácil</span>, cada abordagem pode ajudar indivíduos em situações específicas, por isso temos uma seção dedicada com <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">diferentes abordagens</span> para que você possa aprender sobre cada uma e também <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">decidir se deseja ou não seguir alguma</span>.
                 <br><br>
-                É importante lembrar que <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">nem todas as abordagens funcionam para todas as pessoas</span>. Por isso, é importante consultar um profissional de saúde mental para <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">descobrir qual abordagem terapêutica é a melhor para você</span>. Não perca mais tempo lutando contra seus problemas sozinho, descubra agora qual abordagem terapêutica pode ser a chave para o equilíbrio da sua mente.</p>
+                É importante lembrar que <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">nem todas as abordagens funcionam para todas as pessoas</span>. Por isso, é importante consultar um profissional de saúde mental para <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">descobrir qual abordagem terapêutica é a melhor para você</span>. Não perca mais tempo lutando contra seus problemas sozinho, descubra agora qual abordagem terapêutica pode ser a chave para evoluir sua mente.</p>
             </blockquote>
-
+          </div>
 
             <!-- <button type="button" class="btn btn-danger waves btn-lg fs-xl">Adquira Agora!</button> -->
             <div class="row justify-content-center align-items-center g-2">
               <div class="col">
                 <div class="container pt-4 py-5" id="icon-grid">
-                  <h2 class="pb-2 border-bottom headline">Algumas das terapias aboradas</h2>
+                  <div class="read">
+                  <h2 class="pb-2 border-bottom headline">Algumas das terapias abordadas</h2>
               
                   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-center">
                     <div class="feature col">
@@ -283,7 +312,7 @@
                         <i class="fas fa-check-circle icon-size"></i>
                       </div>
                       <h3 class="fs-2">Terapia de Aceitação e Compromisso (ACT)</h3>
-                      <p>Descubra como a ACT pode ajudá-lo a lidar com pensamentos e sentimentos negativos e a se comprometer com a mudança necessária para alcançar o equilíbrio mental</p>
+                      <p>Descubra como a ACT pode ajudá-lo a lidar com pensamentos e sentimentos negativos e a se comprometer com a mudança necessária para alcançar a estabilidade mental</p>
                      
                     </div>
                     <div class="feature col">
@@ -297,6 +326,7 @@
                     
                     
                   </div>
+                </div>
                   <div style="
                       width: 100%;
                       text-align: center;
@@ -305,32 +335,37 @@
                 
                 </div>
                 </div>
+                <div class="read">
                 <blockquote class="blockquote quotes pt-0">
-                  <p>Não permita que seus pensamentos negativos ditem o rumo da sua vida. Aprenda a lidar com eles de maneira saudável e construtiva, usando as técnicas certas. O <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">Equilibrium</span> é o guia definitivo que vai te ajudar nessa jornada.
+                  <p>Não permita que seus pensamentos negativos ditem o rumo da sua vida. Aprenda a lidar com eles de maneira saudável e construtiva, usando as técnicas certas. O <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">Equilíbrium</span> é o guia definitivo que vai te ajudar nessa jornada.
 <br><br>
-                    Invista agora e descubra as melhores <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">estratégias e abordagens</span> comprovadas que vão te levar ao equilíbrio mental duradouro que você tanto deseja.
+                    Invista agora e descubra as melhores <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">estratégias e abordagens</span> comprovadas que vão te levar ao progressão mental duradoura que você tanto deseja.
                   </p>
                 </blockquote>
+              </div>
   </div>
 </div>
 
 <div class="row justify-content-center align-items-center g-2 pb-5">
-  <h2 class="pb-2 border-bottom headline">Por que você deve adquirir o livro "Equilibrium" ?</h2>
+  <div class="read">
+  <h2 class="pb-2 border-bottom headline">Por que você deve adquirir o livro "Equilíbrium" ?</h2>
   <div class="col">
    
     <!-- <figure class="text-center"> -->
         <blockquote class="blockquote quotes pt-3">
-          <p>Se você chegou até aqui, provavelmente está considerando seriamente a possibilidade de adquirir o livro "<span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">Equilibrium - O guia para encontrar o equilíbrio mental</span>". Mas pode estar se perguntando: por que <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">deveria investir</span> meu dinheiro neste livro?
+          <p>Se você chegou até aqui, provavelmente está considerando seriamente a possibilidade de adquirir o livro "<span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">Equilíbrium</span>". Mas pode estar se perguntando: por que <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">deveria investir</span> meu dinheiro neste livro?
 <br><br>
             Bem, a resposta é simples. Este livro é uma ferramenta <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">valiosa</span> para aqueles que desejam melhorar sua saúde mental e alcançar um equilíbrio emocional duradouro. Os tópicos abordados no livro são <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">fundamentais</span> para qualquer pessoa que busca ter uma vida mais plena e feliz, se <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">distanciando de transtornos mentais e emocionais</span> que prejudicam o bem-estar, você é a <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">única pessoa que pode transformar a si mesma</span>.
             <br><Br>
             Ao adquirir o livro, você terá acesso a informações e estratégias <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">poderosas</span> que podem ajudá-lo a identificar padrões negativos de pensamento, gerenciar suas emoções, criar hábitos saudáveis e usar <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">abordagens terapêuticas eficazes</span> para lidar com problemas emocionais mais complexos.
             <br><Br>
-            Além disso, o livro foi cuidadosamente elaborado com base em <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">pesquisas atualizadas e técnicas comprovadas no mundo todo</span>. As informações apresentadas no livro são claras, concisas e de fácil aplicação, o que significa que você poderá começar a melhorar sua saúde mental desde a primeira leitura. Então, por que não investir em si mesmo e adquirir "<span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">Equilibrium - O guia para encontrar o equilíbrio mental</span>" hoje mesmo?
+            Além disso, o livro foi cuidadosamente elaborado com base em <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">pesquisas atualizadas e técnicas comprovadas no mundo todo</span>. As informações apresentadas no livro são claras, concisas e de fácil aplicação, o que significa que você poderá começar a melhorar sua saúde mental desde a primeira leitura. Então, por que não investir em si mesmo e adquirir "<span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">Equilíbrium</span>" hoje mesmo?
           </p>
         </blockquote>
 
         </div>
+
+      </div>
         <div style="
                       width: 100%;
                       text-align: center;
@@ -339,22 +374,25 @@
 
        
         <div class="row justify-content-center align-items-center g-2 pb-5">
+          <div class="read">
           <h2 class="pb-2 border-bottom headline">Qual o valor do livro?</h2>
           <div class="col">
            
             <!-- <figure class="text-center"> -->
                 <blockquote class="blockquote quotes pt-0">
-                  <p>Com este livro <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">transformador</span>, você pode finalmente encontrar o equilíbrio mental que tanto deseja. Normalmente vendido por R$147,00, hoje oferecemos a você uma oportunidade única. Adquira agora por apenas R$67,00 <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">enquanto durarem as vagas</span> e tenha acesso a um desconto de mais de 50%. Isso mesmo, mais de 50% de economia em um material <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">valioso e transformador</span> como este.
+                  <p>Com este livro <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">transformador</span>, você pode finalmente encontrar a evolução mental que tanto deseja. Normalmente vendido por R$147,00, hoje oferecemos a você uma oportunidade única. Adquira agora por apenas R$67,00 <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">enquanto durarem as vagas</span> e tenha acesso a um desconto de mais de 50%. Isso mesmo, mais de 50% de economia em um material <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">valioso e transformador</span> como este.
                     <br><br>
                     Você pode estar se perguntando: por que devo investir meu dinheiro neste livro? Bem, pense nisso como um investimento em sua saúde mental e bem-estar. Quanto você gastaria em sessões de terapia para adquirir 10% deste conhecimento fornecido? Com apenas um pagamento de R$67,00, você terá acesso vitalício a sua cópia com informações e estratégias poderosas que podem ajudá-lo a superar esses problemas de forma natural e duradoura.
                     <br><br>
                     Além disso, oferecemos a você uma garantia de 30 dias. Isso significa que você tem tempo suficiente para testar o livro, colocar em prática as técnicas e estratégias apresentadas e avaliar se elas funcionam para você. Se por qualquer motivo você não estiver satisfeito, basta entrar em contato conosco e nós devolveremos todo o seu dinheiro. Sem perguntas, sem burocracia, sem enrolação.
                     <br><br>
-                    Não perca esta chance de <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">economizar</span> mais de 50% em um livro <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">valioso e transformador</span> que pode mudar sua vida para sempre. Adquira agora seu exemplar de Equilibrium - O guia para encontrar o equilíbrio mental.
+                    Não perca esta chance de <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">economizar</span> mais de 50% em um livro <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">valioso e transformador</span> que pode mudar sua vida para sempre. Adquira agora seu exemplar de Equilíbrium - O guia para encontrar o equilíbrio mental.
                   </p>
                 </blockquote>
         
                 </div>
+
+              </div>
                 <div style="
                       width: 100%;
                       text-align: center;
@@ -377,7 +415,7 @@
                         <blockquote class="blockquote quotes pt-0">
                           <p>Com este livro <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">transformador</span>, você pode finalmente encontrar o equilíbrio mental que tanto deseja. Normalmente vendido por R$147,00, hoje oferecemos a você uma oportunidade única. Adquira agora por apenas R$47,00 <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">enquanto durarem as vagas</span> e tenha acesso a um desconto de mais de 50%. Isso mesmo, mais de 65% de economia em um material <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">valioso e transformador</span> como este.<br><br>
 Pense nisso como uma <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">oportunidade única</span> de mudar sua vida para melhor, investindo apenas <span style="background-color: #ffff00;color:#000;font-weight: bold;padding:2px">R$47,00</span> em um livro que pode trazer benefícios para toda a sua vida. Imagine como seria ter <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">mais controle sobre suas emoções</span>, ter <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">mais clareza mental</span>, menos estresse e ansiedade, e ser capaz de lidar com problemas emocionais de forma mais eficaz. Tudo isso é possível com o conhecimento apresentado neste livro.<br><br>
-E não se preocupe, você não tem nada a perder. Oferecemos uma garantia de 60 dias para que você possa experimentar e testar os ensinamentos apresentados no livro. Se você não estiver satisfeito com os resultados, nós devolvemos o seu dinheiro sem perguntas. Não há risco envolvido, então não perca esta oportunidade. Adquira agora o seu exemplar de <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">Equilibrium - O guia para encontrar o equilíbrio mental</span> e comece a transformar sua vida hoje mesmo!
+E não se preocupe, você não tem nada a perder. Oferecemos uma garantia de 60 dias para que você possa experimentar e testar os ensinamentos apresentados no livro. Se você não estiver satisfeito com os resultados, nós devolvemos o seu dinheiro sem perguntas. Não há risco envolvido, então não perca esta oportunidade. Adquira agora o seu exemplar de <span style="background-color: #5E376D;color:#fff;font-weight: bold;padding:2px">Equilíbrium - O guia para encontrar o equilíbrio mental</span> e comece a transformar sua vida hoje mesmo!
                           </p>
                         </blockquote>
                 
@@ -395,5 +433,169 @@ E não se preocupe, você não tem nada a perder. Oferecemos uma garantia de 60 
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" ></script>
     <script src="./js/waves.js" ></script>
+  <script src="./js/FileSaver.js" ></script>
+
+    <style type="text/css">
+    .marcado {
+      background-color: yellow;
+      color: black;
+    }
+    </style>
+
+<script>
+
+function salvarComoMP3(audioData, filename) {
+  // Converte o áudio em um objeto Blob
+  var blob = new Blob([new Uint8Array(audioData)], { type: 'audio/mp3' });
+  
+  // Salva o arquivo usando a biblioteca FileSaver.js
+  saveAs(blob, filename);
+}
+
+
+</script>
+
+    <script type="text/javascript">
+var voz = null;
+var posicaoAtual = 0;
+
+// Função para listar todas as vozes disponíveis
+function listarVozes() {
+  var Allvoices = speechSynthesis.getVoices();
+  var listaVozes = document.getElementById('lista-vozes');
+  listaVozes.innerHTML = '';
+
+  voices = Allvoices.filter(function(voice) {
+    return voice.name.includes('português Brasil');
+  });
+
+  if(voices.length == 0) {
+  
+    voices = Allvoices.filter(function(voice) {
+    return voice.lang.startsWith('pt-BR');
+  });
+
+  voices = voices.filter(function(voice) {
+    return voice.name.includes('Natural');
+  });
+
+  if(voices.length == 0) {
+
+    voices = Allvoices.filter(function(voice) {
+    return voice.lang.startsWith('pt-BR');
+  });
+
+
+  }
+
+  }
+  
+  var opcaoPadrao = document.createElement('option');
+opcaoPadrao.textContent = 'Nenhuma voz selecionada';
+opcaoPadrao.setAttribute('value', '');
+opcaoPadrao.setAttribute('disabled', true);
+opcaoPadrao.setAttribute('selected', true);
+listaVozes.appendChild(opcaoPadrao);
+
+voices.forEach(function(voice) {
+  var opcao = document.createElement('option');
+  opcao.textContent = voice.name;
+  opcao.setAttribute('value', voice.lang + '|' + voice.name);
+  listaVozes.appendChild(opcao);
+});
+}
+
+// Adiciona o evento de carregamento das vozes
+window.onload = 
+window.speechSynthesis.onvoiceschanged = function() {
+  listarVozes();
+};
+
+// Adiciona o evento de mudança de voz
+var listaVozes = document.getElementById('lista-vozes');
+listaVozes.addEventListener('change', function() {
+  var vozSelecionada = this.value.split('|');
+  voz = speechSynthesis.getVoices().find(function(voice) {
+    return voice.lang === vozSelecionada[0] && voice.name === vozSelecionada[1];
+  });
+
+  // Se já estava lendo, continua a partir do ponto atual
+  if (speechSynthesis.speaking) {
+    speechSynthesis.cancel();
+    var elementos = document.querySelectorAll('.read');
+    elementos = Array.from(elementos);
+    lerElementos(elementos, posicaoAtual);
+  }
+});
+
+// Configuração da voz padrão
+var voz = null;
+var vozes = speechSynthesis.getVoices();
+var vozPadrao = vozes.find(function(voice) {
+  return voice.lang === 'pt-BR';
+});
+if (vozPadrao) {
+  voz = vozPadrao;
+}
+
+// Função para ler um array de elementos em voz alta
+function lerElementos(elementos, posicaoInicial,audios) {
+  // Se especificado, pula para a posição inicial
+  if (posicaoInicial) {
+    posicaoAtual = posicaoInicial;
+    elementos = elementos.slice(posicaoInicial);
+  }
+
+  // Cria um array de promessas para cada elemento
+  var promessas = elementos.map(function(elemento, index) {
+  var texto = elemento.innerText || elemento.textContent;
+  var utterance = new SpeechSynthesisUtterance(texto);
+  utterance.voice = voz;
+  utterance.rate = 1; // Velocidade normal
+  utterance.pitch = 0.7;
+  // Cria uma promessa para falar cada elemento
+  return new Promise(function(resolve, reject) {
+    utterance.onend = function() {
+      // Adiciona o áudio atual ao array de áudios
+      audios.push(utterance.audioData);
+      posicaoAtual = index + 1;
+      resolve();
+    };
+    speechSynthesis.speak(utterance);
+  }).then(function() {
+    // Retorna o elemento para o estado normal
+    elemento.classList.remove('marcado');
+  });
+});
+
+// Retorna uma promessa para falar todos os elementos
+return Promise.all(promessas);
+}
+
+// Adiciona o evento para permitir a leitura em voz alta
+var checkbox = document.getElementById('ativar-leitura');
+checkbox.addEventListener('change', function() {
+  if (this.checked) {
+    var elementos = document.querySelectorAll('.read');
+    elementos = Array.from(elementos);
+    // Cria um array vazio para guardar os áudios
+    var audios = [];
+    lerElementos(elementos, posicaoAtual, audios).then(function() {
+      // Concatena todos os áudios em um único arquivo MP3
+      concatAudio(audios, 'fala.mp3').then(function() {
+        console.log('Áudio salvo com sucesso!');
+      }).catch(function(err) {
+        console.error(err);
+      });
+    });
+  } else {
+    speechSynthesis.cancel();
+    posicaoAtual = 0;
+  }
+});
+
+
+      </script>
   </body>
+  
 </html>
